@@ -10,7 +10,7 @@ class MoviesController < ApplicationController
     # will render app/views/movies/show.<extension> by default
     @director = @movie.director
   end
-
+# them vao ham index
   def index
     sort = params[:sort] || session[:sort]
     case sort

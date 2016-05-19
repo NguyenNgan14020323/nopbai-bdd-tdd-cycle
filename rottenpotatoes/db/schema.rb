@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20160513051507) do
     t.datetime "release_date"
     t.datetime "created_at"
     t.datetime "updated_at"
+    # them diretor 
     t.string   "director"
   end
 

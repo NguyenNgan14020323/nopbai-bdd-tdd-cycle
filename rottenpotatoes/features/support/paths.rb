@@ -9,7 +9,7 @@ module NavigationHelpers
   #   When /^I go to (.+)$/ do |page_name|
   #
   # step definition in web_steps.rb
-  #
+  #them duong dan
   def path_to(page_name)
     case page_name
 

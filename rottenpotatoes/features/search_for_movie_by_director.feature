@@ -5,6 +5,7 @@ Feature: search for movies by director
   I want to include and serach on director information in movies I enter
 
 Background: movies in database
+  
 
   Given the following movies exist:
   | title        | rating | director     | release_date |
@@ -19,12 +20,14 @@ Scenario: add director to existing movie
   And  I press "Update Movie Info"
   Then the director of "Alien" should be "Ridley Scott"
 
+
 Scenario: find movie with same director
   Given I am on the details page for "Star Wars"
   When  I follow "Find Movies With Same Director"
   Then  I should be on the Similar Movies page for "Star Wars"
   And   I should see "THX-1138"
   But   I should not see "Blade Runner"
+
 
 Scenario: can't find similar movies if we don't know director (sad path)
   Given I am on the details page for "Alien"
